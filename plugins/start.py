@@ -88,8 +88,8 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
+                    InlineKeyboardButton("ᴀʙᴏᴜᴛ ᴍᴇ", callback_data = "about"),
+                    InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/HDMAXX")
                 ]
             ]
         )
@@ -112,7 +112,7 @@ async def start_command(client: Client, message: Message):
 
 WAIT_MSG = """"<b>Processing ...</b>"""
 
-REPLY_ERROR = """<code>Use this command as a replay to any telegram message with out any spaces.</code>"""
+REPLY_ERROR = """<code>ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴀꜱ ᴀ ʀᴇᴘʟᴀʏ ᴛᴏ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇꜱꜱᴀɢᴇ ᴡɪᴛʜ ᴏᴜᴛ ᴀɴʏ ꜱᴘᴀᴄᴇꜱ.</code>"""
 
 #=====================================================================================##
 
@@ -123,15 +123,15 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton(
-                "Join Channel",
-                url = client.invitelink)
+                "ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ",
+                 url=f"https://t.me/HDMAXX")
         ]
     ]
     try:
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = 'Try Again',
+                    text = 'ᴛʀʏ ᴀɢᴀɪɴ',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
