@@ -28,8 +28,8 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "1936430521"))
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mvstore")
-DB_NAME = os.environ.get("DATABASE_NAME", "mongodb+srv://mvstore:mvstore@cluster0.00dl2o7.mongodb.net/?retryWrites=true&w=majority")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://mvstore:mvstore@cluster0.00dl2o7.mongodb.net/?retryWrites=true&w=majority")
+DB_NAME = os.environ.get("DATABASE_NAME", "mvstore")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001713726502"))
